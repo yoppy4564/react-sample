@@ -1,15 +1,29 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Hello from './componets/Hello';
+import Name from './componets/Name';
+import Message from './componets/Message';
+import Parent from './componets/ContainerSample';
+import Page from './componets/ContextSample';
+import Counter from './componets/Counter';
+import Counter2 from './componets/Counter2';
+import Counter3 from './componets/reducer';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <Hello />
+    <Name />
+    <Message />
+    <Parent />
+    <Page />
+    <Counter initialValue={1}/>
+    <Counter2 />
+    <Counter3 initialValue={0}/>
   </React.StrictMode>
 );
 

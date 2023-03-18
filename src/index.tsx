@@ -10,12 +10,16 @@ import Page from './componets/ContextSample';
 import Counter from './componets/Counter';
 import Counter2 from './componets/Counter2';
 import Counter3 from './componets/reducer';
+import { Memo } from './componets/Memo';
+import { Memo2 } from './componets/Memo2';
+import { Parent3 } from './componets/useCallbackSample';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
-  <React.StrictMode>
+  <>
+  {/* <React.StrictMode> */}
     <Hello />
     <Name />
     <Message />
@@ -24,7 +28,11 @@ root.render(
     <Counter initialValue={1}/>
     <Counter2 />
     <Counter3 initialValue={0}/>
-  </React.StrictMode>
+    {/* <Memo /> */}
+    <Memo2 />
+    <Parent3 />
+  {/* </React.StrictMode> */}
+  </>
 );
 
 // If you want to start measuring performance in your app, pass a function

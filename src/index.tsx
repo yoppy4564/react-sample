@@ -13,6 +13,8 @@ import Counter3 from './componets/reducer';
 import { Memo } from './componets/Memo';
 import { Memo2 } from './componets/Memo2';
 import { Parent3 } from './componets/useCallbackSample';
+import { UseMemoSample } from './componets/useMemoSample';
+import { Clock } from './componets/Clock';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -31,6 +33,8 @@ root.render(
     {/* <Memo /> */}
     <Memo2 />
     <Parent3 />
+    <UseMemoSample />
+    <Clock />
   {/* </React.StrictMode> */}
   </>
 );
